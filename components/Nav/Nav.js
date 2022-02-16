@@ -1,8 +1,5 @@
-export default function Nav() {
-  return (
-    <nav>
-      <a>Items</a>
-      <a>Collections</a>
-    </nav>
-  );
+import { NavStyled } from "./Nav.styled";
+
+export default function Nav({ children }) {
+  return <NavStyled>{children}</NavStyled>;
 }

@@ -1,4 +1,4 @@
-import { gray, blue, red, green } from "@radix-ui/colors";
+import { slate } from "@radix-ui/colors";
 
 import { createStitches } from "@stitches/react";
 
@@ -14,10 +14,7 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      ...gray,
-      ...blue,
-      ...red,
-      ...green,
+      ...slate,
     },
   },
   media: {
