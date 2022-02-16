@@ -1,7 +1,7 @@
 import { styled } from "../../stitches.config";
 import { NavStyled } from "../Nav/Nav.styled";
 
-const Wrapper = styled("header", {
+const StyledHeader = styled("header", {
   backgroundColor: "$slate7",
   color: "$slate12",
   display: "flex",
@@ -53,4 +53,4 @@ const Lockup = styled("div", {
   fontSize: "25px",
 });
 
-export { Lockup, Primary, Super, Wrapper };
+export { Lockup, Primary, Super, StyledHeader };
