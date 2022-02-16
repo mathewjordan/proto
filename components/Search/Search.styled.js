@@ -13,11 +13,7 @@ const Input = styled("input", {
   border: "none",
   backgroundColor: "$slate3",
   padding: "0 1.618rem",
-  fontSize: "19px",
-
-  "&::placeholder": {
-    fontSize: "19px",
-  },
+  fontSize: "15px",
 });
 
 const Button = styled("button", {
