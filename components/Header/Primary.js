@@ -7,11 +7,14 @@ export default function HeaderPrimary() {
   return (
     <Sticky stickyClassName="sticky-primary">
       <Primary>
-        <Nav>
-          <a>Items</a>
-          <a>Collections</a>
-        </Nav>
-        <Search />
+        <span>Northwestern</span>
+        <div>
+          <Nav>
+            <a>Items</a>
+            <a>Collections</a>
+          </Nav>
+          <Search />
+        </div>
       </Primary>
     </Sticky>
   );

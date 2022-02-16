@@ -16,6 +16,9 @@ export const {
     colors: {
       ...slate,
     },
+    transitions: {
+      all: "all 500ms cubic-bezier(0.16, 1, 0.3, 1)",
+    },
   },
   media: {
     bp1: "(min-width: 480px)",
