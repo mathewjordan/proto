@@ -11,7 +11,7 @@ const GridStyled = styled(Masonry, {
   margin: "auto 5vw",
   maxWidth: "90vw",
   position: "relative",
-  zIndex: "1",
+  zIndex: "0",
 });
 
 export { GridItem, GridStyled };

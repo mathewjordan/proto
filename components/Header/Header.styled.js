@@ -7,6 +7,10 @@ const Wrapper = styled("header", {
   display: "flex",
   flexDirection: "column",
   marginBottom: "5px",
+
+  ".sticky-primary": {
+    zIndex: "1",
+  },
 });
 
 const Super = styled("div", {
@@ -35,10 +39,11 @@ const Primary = styled("div", {
   backgroundColor: "white",
   color: "$slate12",
   display: "flex",
-  minWidth: "90vw",
+  width: "90vw",
   margin: "0 auto",
   height: "50px",
   justifyContent: "space-between",
+  zIndex: "1",
 });
 
 const Lockup = styled("div", {
