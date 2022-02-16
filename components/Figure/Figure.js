@@ -1,7 +1,12 @@
-export default function Figure() {
+import { FigureStyled, Image, Title, Type } from "./Figure.styled";
+
+export default function Figure({ data }) {
+  const { height, title, type } = data;
   return (
-    <figure>
-      <span></span>
-    </figure>
+    <FigureStyled>
+      <Image style={{ width: "100%", height: `${height}px` }} />
+      <Title>{title}</Title>
+      <Type>{type}</Type>
+    </FigureStyled>
   );
 }

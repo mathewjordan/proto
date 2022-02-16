@@ -6,6 +6,7 @@ const Wrapper = styled("header", {
   color: "$slate12",
   display: "flex",
   flexDirection: "column",
+  marginBottom: "5px",
 });
 
 const Super = styled("div", {
