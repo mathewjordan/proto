@@ -5,8 +5,8 @@ import { GridItem, GridStyled } from "./Grid.styled";
 export default function Grid() {
   return (
     <GridStyled breakpointCols={4}>
-      {results.map((result) => (
-        <GridItem>
+      {results.map((result, index) => (
+        <GridItem key={index}>
           <Figure data={result} />
         </GridItem>
       ))}
