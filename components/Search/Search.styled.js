@@ -28,6 +28,11 @@ const Button = styled("button", {
   cursor: "pointer",
   border: "none",
   backgroundColor: "transparent",
+
+  svg: {
+    fill: "$slate9",
+    padding: "10px",
+  },
 });
 
 export { Button, Input, Wrapper };
