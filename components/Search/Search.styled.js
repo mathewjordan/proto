@@ -39,4 +39,24 @@ const Button = styled("button", {
   },
 });
 
-export { Button, Input, Wrapper };
+const Clear = styled("button", {
+  position: "absolute",
+  display: "flex",
+  right: "0",
+  height: "50px",
+  width: "50px",
+  justifyContent: "center",
+  textAlign: "center",
+  alignItems: "center",
+  cursor: "pointer",
+  border: "none",
+  backgroundColor: "transparent",
+  zIndex: "1",
+
+  svg: {
+    fill: "$slate9",
+    padding: "10px",
+  },
+});
+
+export { Button, Clear, Input, Wrapper };
