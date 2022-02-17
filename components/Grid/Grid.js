@@ -3,16 +3,15 @@ import { results } from "../../mocks/results";
 import { GridControls, GridFilter, GridItem, GridStyled } from "./Grid.styled";
 import Topics from "../Topics/Topics";
 import Sticky from "react-sticky-el";
+import * as Dialog from "@radix-ui/react-dialog";
+import Filter from "../Filter/Filter";
 
 export default function Grid() {
   return (
     <>
       <GridControls>
         <Sticky topOffset={-81} stickyClassName="sticky-filter">
-          <GridFilter>
-            <span></span>
-            <label>Filter</label>
-          </GridFilter>
+          <Filter />
         </Sticky>
         <Topics />
       </GridControls>

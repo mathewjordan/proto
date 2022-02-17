@@ -1,4 +1,5 @@
 import { styled } from "../../stitches.config";
+import * as Dialog from "@radix-ui/react-dialog";
 import Masonry from "react-masonry-css";
 
 const GridControls = styled("div", {
@@ -21,7 +22,7 @@ const GridControls = styled("div", {
   },
 });
 
-const GridFilter = styled("button", {
+const GridFilter = styled(Dialog.Trigger, {
   width: "81px",
   height: "38px",
   cursor: "pointer",
