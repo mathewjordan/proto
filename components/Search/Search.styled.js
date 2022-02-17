@@ -5,15 +5,18 @@ const Wrapper = styled("div", {
   display: "flex",
   flexShrink: "0",
   flexGrow: "1",
+  backgroundColor: "$slate3",
 });
 
 const Input = styled("input", {
+  position: "relative",
   display: "flex",
   width: "100%",
   border: "none",
-  backgroundColor: "$slate3",
+  backgroundColor: "transparent",
   padding: "0 1.618rem",
   fontSize: "15px",
+  zIndex: "1",
 });
 
 const Button = styled("button", {
@@ -28,6 +31,7 @@ const Button = styled("button", {
   cursor: "pointer",
   border: "none",
   backgroundColor: "transparent",
+  zIndex: "0",
 
   svg: {
     fill: "$slate9",

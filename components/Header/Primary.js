@@ -6,6 +6,7 @@ import Search from "../Search/Search";
 
 export default function HeaderPrimary() {
   const [searchActive, setSearchActive] = useState(false);
+
   const handleIsSearchActive = (status) => {
     setSearchActive(status);
   };

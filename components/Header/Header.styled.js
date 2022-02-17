@@ -1,6 +1,6 @@
 import { styled } from "../../stitches.config";
 import { NavStyled } from "../Nav/Nav.styled";
-import { Input, Button } from "../Search/Search.styled";
+import { Wrapper, Input, Button } from "../Search/Search.styled";
 
 const Lockup = styled("div", {
   alignItems: "center",
@@ -78,10 +78,39 @@ const StyledHeader = styled("header", {
         opacity: "1",
         width: "auto",
         padding: "0 1rem",
+        transition: "$all",
       },
 
       "> div": {
         flexGrow: "0",
+      },
+
+      "&[data-search-active='true']": {
+        "> span": {
+          opacity: "0",
+          padding: "0",
+          width: "0",
+        },
+
+        "> div": {
+          flexGrow: "1",
+        },
+
+        [`& ${NavStyled}`]: {
+          width: "0",
+          opacity: "0",
+        },
+
+        [`& ${Input}`]: {
+          width: "100%",
+          padding: "0 2.618rem",
+          color: "$slate1",
+          cursor: "unset",
+        },
+
+        [`& ${Button}`]: {
+          left: "0",
+        },
       },
     },
 
@@ -89,6 +118,11 @@ const StyledHeader = styled("header", {
       width: "0",
       backgroundColor: "transparent",
       color: "$slate1",
+      cursor: "pointer",
+    },
+
+    [`& ${Wrapper}`]: {
+      backgroundColor: "unset",
     },
   },
 });
