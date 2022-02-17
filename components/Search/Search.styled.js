@@ -14,7 +14,7 @@ const Input = styled("input", {
   width: "100%",
   border: "none",
   backgroundColor: "transparent",
-  padding: "0 1.618rem",
+  padding: "0 2.618rem",
   fontSize: "15px",
   zIndex: "1",
 });
@@ -22,7 +22,7 @@ const Input = styled("input", {
 const Button = styled("button", {
   position: "absolute",
   display: "flex",
-  right: "0",
+  left: "0",
   height: "50px",
   width: "50px",
   justifyContent: "center",

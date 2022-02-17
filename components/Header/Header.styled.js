@@ -106,6 +106,8 @@ const StyledHeader = styled("header", {
           padding: "0 2.618rem",
           color: "$slate1",
           cursor: "unset",
+          opacity: "1",
+          marginRight: "0",
         },
 
         [`& ${Button}`]: {
@@ -115,10 +117,13 @@ const StyledHeader = styled("header", {
     },
 
     [`& ${Input}`]: {
-      width: "0",
+      width: "50px",
       backgroundColor: "transparent",
       color: "$slate1",
       cursor: "pointer",
+      padding: "0",
+      opacity: "0",
+      marginRight: "1rem",
     },
 
     [`& ${Wrapper}`]: {
